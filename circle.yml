@@ -7,7 +7,7 @@ jobs:
         - checkout
         - run:
             name: Java 8 - Test current version
-            command: ./mvnw -Pdistribute,snapshot,docs clean test
+            command: ./mvnw clean test
 
    deploy:
      docker:
@@ -15,7 +15,7 @@ jobs:
      steps:
         - checkout
         - run:
-            name: Deploy to Artifactory
+            name: Deploy to PWS
             command: ./deploy.bash
 workflows:
   version: 2

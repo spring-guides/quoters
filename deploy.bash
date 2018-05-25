@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 if [ "${CIRCLE_BRANCH}" == "master" ]; then
-	./mvnw clean package
+	./mvnw clean -Dmaven.test.skip=true package
 
 	# Download CF CLI
 	wget -O cf-linux.tgz "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github"
