@@ -16,8 +16,13 @@
 
 package org.springframework.quoters;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-public interface QuoteRepository extends JpaRepository<Quote, Long> {
+@SpringBootApplication
+public class QuotersIncorporatedApplication {
 
+	public static void main(String[] args) {
+		SpringApplication.run(QuotersIncorporatedApplication.class, args);
+	}
 }

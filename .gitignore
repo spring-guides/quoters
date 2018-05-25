@@ -3,3 +3,5 @@ build
 *.iml
 .gradle
 target
+cf-linux.tgz
+cf
