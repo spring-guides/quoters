@@ -1,35 +1,24 @@
 package org.springframework.quoters;
 
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Quote {
+@Data
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+class Quote {
 
 	@Id @GeneratedValue
-	Long id;
-
+	private Long id;
+	
 	private String quote;
 
-	protected Quote() {
-	}
-
-	public Quote(String quote) {
+	Quote(String quote) {
 		this.quote = quote;
 	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public String getQuote() {
-		return quote;
-	}
-
-	@Override
-	public String toString() {
-		return "id: " + id + " Quote: " + quote;
-	}
-
 }

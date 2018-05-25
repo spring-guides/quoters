@@ -1,7 +1,7 @@
 package org.springframework.quoters;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface QuoteRepository extends CrudRepository<Quote, Long> {
+public interface QuoteRepository extends JpaRepository<Quote, Long> {
 
 }

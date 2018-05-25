@@ -1,26 +1,16 @@
 package org.springframework.quoters;
 
-public class QuoteResource {
+import lombok.Data;
 
-	private final String type;
-	private final Quote value;
+@Data
+class QuoteResource {
 
-	public QuoteResource(Quote quote, String type) {
-		this.value = quote;
+	private String type;
+	private Quote value;
+
+	QuoteResource(Quote value, String type) {
+
+		this.value = value;
 		this.type = type;
 	}
-
-	public String getType() {
-		return type;
-	}
-
-	public Quote getValue() {
-		return value;
-	}
-
-	@Override
-	public String toString() {
-		return "Type: " + type + " Value: " + value;
-	}
-
 }
