@@ -1,0 +1,21 @@
+image:https://circleci.com/gh/spring-guides/quoters/tree/master.svg?style=svg["CircleCI", link="https://circleci.com/gh/spring-guides/quoters/tree/master"]
+
+Quoters Incorporated is a service used to support other https://spring.io/guides[Spring Guides].
+
+Instead of relying on someone else's REST service to supply us with data for consumption, we run our own,
+filled with real life Spring Boot quotes.
+
+The app is very simple, but can also serve as a reference point for building your own Spring MVC app.
+
+Technologies used:
+
+* Spring MVC
+* Project Lombok
+* Spring Data JPA
+* H2 embedded database
+
+The app is hosted on https://console.run.pivotal.io/[PWS (_p-dubs_)] at https://gturnquist-quoters.cfapps.io.
+
+* https://gturnquist-quoters.cfapps.io/api - see ALL the quotes
+* https://gturnquist-quoters.cfapps.io/api/1 - see ONE quote
+* https://gturnquist-quoters.cfapps.io/api/random - see a random quote
