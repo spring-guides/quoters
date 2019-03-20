@@ -534,7 +534,7 @@ For vendor/github.com/gogo/protobuf/protoc-gen-gogo/descriptor:
 Extensions for Protocol Buffers to create more go like structures.
 
 Copyright (c) 2013, Vastech SA (PTY) LTD. All rights reserved.
-http://github.com/gogo/protobuf/gogoproto
+https://github.com/gogo/protobuf/gogoproto
 
 Go support for Protocol Buffers - Google's data interchange format
 
@@ -573,7 +573,7 @@ For vendor/github.com/gogo/protobuf/gogoproto:
 Protocol Buffers for Go with Gadgets
 
 Copyright (c) 2013, The GoGo Authors. All rights reserved.
-http://github.com/gogo/protobuf
+https://github.com/gogo/protobuf
 
 Go support for Protocol Buffers - Google's data interchange format
 
@@ -612,7 +612,7 @@ For vendor/github.com/gogo/protobuf/proto:
 Protocol Buffers for Go with Gadgets
 
 Copyright (c) 2013, The GoGo Authors. All rights reserved.
-http://github.com/gogo/protobuf
+https://github.com/gogo/protobuf
 
 Go support for Protocol Buffers - Google's data interchange format
 
