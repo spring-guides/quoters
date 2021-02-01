@@ -1,5 +1,3 @@
-image:https://circleci.com/gh/spring-guides/quoters/tree/master.svg?style=svg["CircleCI", link="https://circleci.com/gh/spring-guides/quoters/tree/master"]
-
 Quoters Incorporated is a service used to support other https://spring.io/guides[Spring Guides].
 
 Instead of relying on someone else's REST service to supply us with data for consumption, we run our own,
@@ -10,7 +8,6 @@ The app is very simple, but can also serve as a reference point for building you
 Technologies used:
 
 * Spring MVC
-* Project Lombok
 * Spring Data JPA
 * H2 embedded database
 
