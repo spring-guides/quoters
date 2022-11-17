@@ -13,6 +13,6 @@ Technologies used:
 
 The app is hosted on https://console.run.pivotal.io/[PWS (_p-dubs_)] at https://gturnquist-quoters.cfapps.io.
 
-* https://gturnquist-quoters.cfapps.io/api - see ALL the quotes
-* https://gturnquist-quoters.cfapps.io/api/1 - see ONE quote
-* https://gturnquist-quoters.cfapps.io/api/random - see a random quote
+* http://localhost:8080/api - see ALL the quotations
+* http://localhost:8080/api/1 - see the first quotation
+* http://localhost:8080/api/random - see a random quotation
