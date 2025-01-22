@@ -22,6 +22,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+/*
+An entity is a lightweight persistence domain object. Typically, an entity represents a table in a relational database, and each entity instance corresponds to a row in that table.
+Entity Relationship Diagram
+https://stackoverflow.com/questions/16041898/what-is-a-persistence-object
+persistence mean java non-volatile memory
+https://www.geeksforgeeks.org/jpa-introduction/
+https://medium.com/@kavya1234/mastering-java-persistence-a-comprehensive-guide-to-jpa-java-persistence-api-55112b5827af
+*/
 @Entity
 class Quote {
 
