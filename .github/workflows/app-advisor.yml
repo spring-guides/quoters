@@ -1,0 +1,32 @@
+name: Docker
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+on:
+  workflow_dispatch:
+
+env:
+  # Use docker.io for Docker Hub if empty
+  SERVER_PORT: 9003
+  SERVER_URI: http://localhost:${{ env.SERVER_PORT }}
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Start server
+        run: |
+          curl -L -H "Authorization: Bearer ${{ secrets.ARTIFACTORY_TOKEN }}" -o spring-server.jar -X GET https://packages.broadcom.com/artifactory/spring-enterprise/com/vmware/tanzu/spring/tanzu-spring-server/1.1.2/tanzu-spring-server-1.1.2.jar
+          java -jar -Dserver.port=${{ env.SERVER_PORT }} spring-server.jar > advisor-server.log 2>&1 &
+          sleep 10
+          echo "Printing the last 5 lines of the log file:"
+          tail -n 3 advisor-server.log 
+      - name: Check server status
+        run: |
+          curl "${{ env.SERVER_URI }}/actuator/health"
